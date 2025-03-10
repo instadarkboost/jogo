@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo 2D</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        canvas {
+            margin-top: 20px;
+            background-color: rgb(0, 255, 115);
+        }
+
+        /* Tela de Game Over */
+        #gameOverScreen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #gameOverScreen button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="jogo2D" width="800" height="400"></canvas>
+
+    <!-- Tela de Game Over -->
+    <div id="gameOverScreen">
+        <h1>Game Over</h1>
+        <button onclick="reiniciarJogo()">Reiniciar</button>
+    </div>
+
+    <script src="vamoooo.js"></script>
+
+</body>
+</html>
